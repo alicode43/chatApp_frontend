@@ -153,30 +153,10 @@ const Navbar = ({ showSearchInput }) => {
 
 
         <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute top-24 left-0 right-0 bg-black text-white p-4 z-50`}>
-          {/* <ul className="space-y-4">
-            {["Home", "Service", "Use Case", "Native"].map((item) => (
-              <NavLink key={item} item={item} />
-            ))}
-            <li className="pt-4">
-              {isLoggedIn ? (
-                <UserDropdown
-                  isOpen={isDropdownOpen}
-                  toggleDropdown={toggleDropdown}
-                  handleLogout={handleLogout}
-                  user={user}
-                />
-              ) : (
-                <Link href="/Signin">
-                  <button className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-100">Login</button>
-                </Link>
-              )}
-            </li>
-          </ul> */}
+ 
 
         </div>
-        {/* <Link href="#" onClick={toggleNotifications} className="block px-4 py-2 text-sm hover:bg-green-900">
-          Notifications
-        </Link> */}
+     
         
         {/* Desktop user login */}
         <div className="hidden md:flex items-center space-x-6">

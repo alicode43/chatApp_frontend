@@ -3,11 +3,11 @@ import io from "socket.io-client";
 import Cookies from "js-cookie";
 
 
-import ThemeToggle from './ThemeToggle'; 
+import ThemeToggle from './ThemeToggle.js'; 
 
-import { Sidebar } from "./Sidebar";
+import { Sidebar } from "./Sidebar.jsx";
 
-import { ChatMessages } from "./ChatMessage";
+import { ChatMessages } from "./ChatMessage.jsx";
 
 
 
