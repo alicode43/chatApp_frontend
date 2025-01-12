@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import Cookies from "js-cookie";
 import ThemeToggle from './ThemeToggle.js'; 
-import { Sidebar } from "./Sidebar"; // Updated import statement
+import Sidebar from "./Sidebar"; // Updated import statement
 import { ChatMessages } from "./ChatMessage.jsx";
 
 const ChatApp = () => {

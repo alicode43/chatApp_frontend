@@ -31,7 +31,7 @@ const toastStyle = {
   borderRadius: '0.5rem',
   boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.1)',
 };
-export const Sidebar = ({ users, onSelectUser, selectedUserId }) => {
+const Sidebar = ({ users, onSelectUser, selectedUserId }) => {
     const [open, setOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState(""); // Add state for search query
     const handleOpen = () => setOpen(true);
@@ -175,3 +175,6 @@ export const Sidebar = ({ users, onSelectUser, selectedUserId }) => {
       </div>
     );
   };
+
+
+export default Sidebar;
