@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define light and dark theme colors */
+:root {
+    --primary-color-light: #000000;
+    --primary-color-dark: #000000;
+    --background-light: #ffffff;
+    --background-dark: #000000;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --border-light: #ddd;
+    --border-dark: #444; /* Darker border color for dark mode */
+
+    /* Additional color variables */
+    --color-primary: #000000; /* Black */
+    --color-secondary: #ffffff; /* White */
+    --color-text: #000000; /* Black */
+    --color-bg: #f5f5f5; /* Light background */
+    --color-gray: #808080; /* Gray */
+}
+
+/* Global Styles */
+body {
+    color: var(--color-text); /* Default text color */
+    background-color: var(--color-bg); /* Default background color */
+}
+
+/* Light mode by default */
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+/* Set color for <p> tags to gray */
+p {
+    color: var(--color-gray);
+}
+
+/* Apply dark mode styles */
+[data-theme='dark'] {
+    background-color: var(--background-dark);  /* Set dark background to black */
+    color: var(--text-dark);  /* Set text color to white in dark mode */
+}
+
+/* Dark mode input and button styles */
+[data-theme='dark'] input,
+[data-theme='dark'] button {
+    border-color: var(--border-dark);  /* Dark border for input and button */
+    background-color: #222;  /* Darker background for input and button */
+    color: var(--text-dark);  /* Text color in input and button */
+}
+
+/* Light mode input and button borders */
+input, button {
+    border: 1px solid var(--border-light); /* Light mode borders */
+}
+
+/* Optional: Tailwind-specific classes for components */
+@layer components {
+    /* Additional styles can be added here if needed */
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
